@@ -2531,7 +2531,7 @@ if ($_SESSION['report_type'] == 17){
     if ($_SESSION['report_type'] == 18){ 
       createHCAT();
         
-        $showall_query ="SELECT * from employeeinfos WHERE isDeleted=0 AND deptCode = '564-5404' ORDER BY firstName ASC";
+        $showall_query ="SELECT * from employeeinfos WHERE isDeleted=0 ORDER BY firstName ASC";
         $fullresult = $userconnect-> query($showall_query);
         $all = get_assocArray($fullresult);
         $empsLen = sizeof($all);
