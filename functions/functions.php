@@ -965,7 +965,7 @@ function createHCAT(){
         $query = $userconnect->query($sql);
         $send = get_data_array($query);
 
-        sendmail_utf8($send['email'], "REPORT SYSTEM", "apps.donotreply@onsemi.com", "Pending Task from ". $s['firstName'] ." ". $s['lastName'], "</b> You have a new task. Please see status on your form.</p> <p>Please use Google Chrome or Mozilla FireFox <a href='http://http://phsm01ws014.ad.onsemi.com/fthrdr/dr_update.php?id=". $ir['id'] ."'>VIEW FORM</a></p><br> <br> <br/><br/><b style='color:red'>Please do not reply.</b> <br/><br/>Applications Engineering <br/> REPORT SYSTEM", $s['email']);    
+        sendmail_utf8($send['email'], "REPORT SYSTEM", "apps.donotreply@onsemi.com", "Pending Task from ". $s['firstName'] ." ". $s['lastName'], "</b> You have a new task. Please see status on your form.</p> <p>Please use Google Chrome or Mozilla FireFox <a href='http://phsm01ws014.ad.onsemi.com/fthrdr/dr_update.php?id=". $ir['id'] ."&datatype=hcat'>VIEW FORM</a></p><br> <br> <br/><br/><b style='color:red'>Please do not reply.</b> <br/><br/>Applications Engineering <br/> REPORT SYSTEM", $s['email']);    
 
         echo ("<script LANGUAGE='JavaScript'>
         window.alert('Record Succesfully Created');

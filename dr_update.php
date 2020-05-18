@@ -5,6 +5,9 @@ $readonly = "readonly";
 $status = "";
 $status_value = "";
 
+if($_GET['datatype'] == "hcat"){
+    $_SESSION['report_type'] = 18;
+}
 
 if ($_SESSION['report_type'] == 1){
     //gets current id//////////////////////
