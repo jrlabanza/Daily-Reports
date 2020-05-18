@@ -1,0 +1,52 @@
+#chart-container{
+    width: 60px;
+    height: auto;
+    
+}
+.chartWrapper {
+ position: relative;
+}
+
+.chartWrapper > canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+}
+
+.chartAreaWrapper {
+  width: 600px;
+  overflow-x: scroll;
+}
+
+table {
+  table-layout: fixed;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-size:8px;
+    
+}
+
+/* th{
+  font-size: 8px;
+} */
+
+table.record thead th, table.record thead td {
+  padding: 0%;
+  border-bottom: 1px solid #111;
+  text-align: center;
+}
+
+.card-header{
+  font-size: 13px;
+  font-weight:bold;
+}
+.card-body{
+  font-size: 13px;
+  
+}
+
+.radiotext{
+  font-size:13px;  
+}
